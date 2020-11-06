@@ -153,8 +153,8 @@ void app_main(void)
                     case AEL_STATE_FINISHED :
                         // anp59 new
                         adf_music_mp3_pos = 0;
-                        audio_pipeline_reset_elements(pipeline); // <--
-                        audio_pipeline_reset_ringbuffer(pipeline); // <--
+                        audio_pipeline_reset_elements(pipeline);
+                        audio_pipeline_reset_ringbuffer(pipeline);
                         audio_pipeline_resume(pipeline);
                         break;
                     default :
